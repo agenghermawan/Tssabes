@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+nav,
+footer,
+main {
+    font-family: "Poppins";
+}
+
+.title-banner {
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 2.625rem;
+    color: #0ec8f8;
+}
+
+.text-about {
+    text-align: justify;
+    font-size: 14px;
+}
+.button-contact {
+    width: 130px;
+}
+.font-contact {
+    font-size: 16px;
+    font-weight: 400;
+}
+.title-profile {
+    font-size: 24;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #4d77ff;
+}
+
+.title-desc {
+    color: #56bbf1;
+    letter-spacing: 0.2;
+}
+
+.title-desc-page {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-get {
+    background-color: #4d17e2;
+    padding: 0.75rem 3rem;
+    border-radius: 50rem !important;
+    color: white;
+}
+
+.text-starter {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #0c145a;
+}
+
+.desc-starter {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.img-galery {
+    border-radius: 30px;
+}
+
+.reached-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #0c145a;
+    text-align: center !important;
+    font-weight: 700 !important;
+}
+
+.reached-text {
+    color: #7e8cac;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 1.75rem;
+}
+
+.title-promotion {
+    margin-top: 100px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.desc-promotion {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #0c145a;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* From cssbuttons.io by @adamgiebl */
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    text-decoration: none;
+    width: 30%;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #3ad8ff;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/* From cssbuttons.io by @westitan */
+.button-profile {
+    position: relative;
+    padding: 19px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+}
+
+button span {
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+}
+
+button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.button-route {
+    font-size: 16px;
+    padding: 1em 3.3em;
+    transform: perspective(200px) rotateX(15deg);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(
+        0deg,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(70, 135, 252, 1) 100%
+    );
+    box-shadow: rgba(63, 94, 251, 0.2) 0px 40px 29px 0px;
+    will-change: transform;
+    transition: all 0.3s;
+    border-bottom: 2px solid rgba(70, 135, 252, 1);
+}
+
+.button-rout:hover {
+    transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+
+.button-rout:active {
+    transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
+
+.navbar-1-1.navbar-light .navbar-nav .nav-link {
+    color: #092a33;
+    transition: 0.3s;
+}
+
+.navbar-1-1.navbar-light .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.navbar-1-1 .btn-get-started {
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.navbar-1-1 .btn-get-started-blue {
+    background-color: #0ec8f8;
+    transition: 0.3s;
+}
+
+.navbar-1-1 .btn-get-started-blue:hover {
+    background-color: #3ad8ff;
+    transition: 0.3s;
+}
+
+.content-3-1 .btn:focus,
+.content-3-1 .btn:active {
+    outline: none !important;
+}
+
+.content-3-1 {
+    padding: 5rem 2rem;
+}
+
+.content-3-1 .img-hero {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.content-3-1 .right-column {
+    width: 100%;
+}
+
+.content-3-1 .title-text {
+    font: 600 1.875rem/2.25rem Poppins, sans-serif;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.025em;
+    color: #121212;
+}
+
+.content-3-1 .title-caption {
+    font: 500 1.5rem/2rem Poppins, sans-serif;
+    margin-bottom: 1.25rem;
+    color: #121212;
+}
+
+.content-3-1 .circle {
+    font: 500 1.25rem/1.75rem Poppins, sans-serif;
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1.25rem;
+    border-radius: 9999px;
+    background-color: #ffbf56;
+}
+
+.content-3-1 .text-caption {
+    font: 400 1rem/1.75rem Poppins, sans-serif;
+    letter-spacing: 0.025em;
+    color: #565656;
+}
+
+.content-3-1 .btn-learn {
+    font: 600 1rem/1.5rem Poppins, sans-serif;
+    padding: 1rem 2.5rem;
+    background-color: #ff7c57;
+    transition: 0.3s;
+    letter-spacing: 0.025em;
+    border-radius: 0.75rem;
+}
+
+.content-3-1 .btn-learn:hover {
+    background-color: #ff9779;
+    transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+    .content-3-1 .title-text {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-3-1 .img-hero {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .content-3-1 .right-column {
+        width: 50%;
+    }
+
+    .content-3-1 .circle {
+        margin-right: 1.25rem;
+        margin-bottom: 0;
+    }
+}
+
+.list-unstyled {
+    margin-bottom: 2rem;
+}
+
+body footer {
+    color: #0ec8f8;
+    padding-top: 72px !important;
+    padding-bottom: 36px !important;
+}
+
+body footer h5 {
+    font-weight: 600 !important;
+    size: 16px !important;
+    line-height: 150%;
+    color: #3ad8ff;
+}
+
+body footer .address p {
+    font-weight: 400 !important;
+    size: 16px !important;
+    line-height: 150%;
+    color: #3ad8ff;
+}
+
+body footer .nav-footer p {
+    font-weight: 700 !important;
+    size: 16px !important;
+    line-height: 150%;
+    color: #3ad8ff;
+}
+
+body footer .nav-footer a {
+    font-weight: 400 !important;
+    size: 16px !important;
+    color: #3ad8ff;
+}
+
+body footer li {
+    margin-bottom: 12px;
+}
+
+body footer .social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+body footer .copyright {
+    margin-top: 76px;
+    padding-top: 36px;
+}
+
+body footer .copyright p {
+    font-weight: 400 !important;
+    size: 16px !important;
+    color: #3ad8ff;
+}
+
+body .cl-light {
+    color: #3ad8ff;
+}
+
+body .cl-light-grey-2 {
+    color: #3ad8ff;
+}
+
+.section-profile {
+    margin-top: 100px;
+}
