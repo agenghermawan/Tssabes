@@ -92,19 +92,25 @@
                     @csrf
                     <div class="form-group">
                         <label for=""> Nama : </label>
-                        <input type="text" class="form-control mt-2 rounded-md" placeholder="Masukkan nama anda ... " name="nama" required>
+                        <input type="text" class="form-control mt-2 rounded-md" name="nama" value="{{ Auth::user()->namaLengkap}}" readonly required>
                      @error('nama')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                     </div>
                     <div class="form-group">
                         <label for=""> Tempat Latihan : </label>
-                        <input type="text" class="form-control mt-2 rounded-md" placeholder="Masukkan tempat latihan anda ... " name="tempat_latihan" required>
+                        <input type="text" class="form-control mt-2 rounded-md" placeholder="Masukkan tempat latihan anda ... "  name="tempat_latihan" required>
                     </div>
+                    @php
+                        $month = date('m');
+                        $day = date('d');
+                        $year = date('Y');
+                        $today = $year.'-'.$month.'-'.$day;
+                    @endphp
                     <div class="form-group">
                         <label for=""> Waktu Latihan : </label>
-                        <input type="date" class="form-control mt-2 rounded-md" name="waktu" required> 
-                        <span class="sub-text__info"> Masukan Tanggal Latihan anda </span>
+                        <input type="date" class="form-control mt-2 rounded-md" name="waktu" required value="{{$today}}" readonly> 
+                        <span class="sub-text__info"> Latihan anda sekarang </span>
                     </div>
 
                     <button class="btn btn-primary rounded-md mt-5" type="submit">
